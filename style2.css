@@ -1,0 +1,45 @@
+.cd-accordion-menu {
+     width: 100%; 
+    max-width: 600px;
+    background: #4d5158;
+     margin: 0em 0; 
+    box-shadow: 0 4px 40px #363a46;
+}
+
+
+.cd-accordion-menu label, .cd-accordion-menu a {
+    padding: 18px 18px 18px 82px;
+    font-size: .8em;
+    
+    
+    
+}
+
+.cd-accordion-menu label {
+    margin-bottom: 0px;
+}
+
+.menu-wrap-click.menu-wrap {
+       transform: translate3d(-39%,0,0) !important;
+    padding: 0 !important;
+}
+
+#open-button{
+    
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    outline:none;
+    transition: all .3s;
+}
+
+#open-button.rotate{
+    transform: rotateY(180deg);
+}
+
+.navbar-header .w3_navigation_pos {
+    position: absolute;
+    top: 13%;
+    left: 4% !important;
+    z-index: 999;
+}

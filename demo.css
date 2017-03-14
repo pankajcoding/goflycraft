@@ -1,0 +1,331 @@
+html, body {
+    font: 16px 'Open Sans', Arial, sans-serif
+}
+
+pre, code {
+    font: 17px 'Inconsolata', monospace;
+    color: #333;
+}
+
+pre {
+    background: none repeat scroll 0 0 #f8f8f8;
+    border: 1px solid #e5e5e5;
+    padding: 8px 15px;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-align: center
+}
+
+p {
+    font-size: 16px;
+    clear: both
+}
+
+table {
+    width: 100%;
+    border: solid 1px #4183C4;
+    border-collapse: collapse;
+    font-size: 13px
+}
+
+table th {
+    color: #4183C4;
+    background-color: #e8e8e8;
+    text-align: left
+}
+
+table th, table td {
+    border: solid 1px #4183C4;
+    padding: 3px 5px
+}
+
+img {
+    border: 0
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto
+}
+
+.heading {
+    color: #4183C4
+}
+
+.note {
+    font-size: 13px;
+    line-height: 27px
+}
+
+.code {
+    background-color: #4183C4;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 2px
+}
+
+.magnifier-preview.example {
+    border: solid 1px #555;
+    text-align: center;
+    line-height: 30px
+}
+
+.magnifier-info {
+    float: left;
+    border: solid 1px #ccc;
+    width: 200px;
+    height: 133px;
+    clear: left;
+    margin-top: -4px
+}
+
+.magnifier-thumb-wrapper.demo {
+    float: left;
+    padding: 0;
+    margin: 0;
+    top: 1px
+}
+
+#preview1 {
+    width: 400px;
+    height: 267px
+}
+
+#preview2 {
+    width: 400px;
+    height: 267px
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700 !important;
+}
+
+    .notice,.warning{
+  background-color: #fff;
+  padding: 10px;
+  margin: 45px auto;
+  position: relative;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.13);
+  width: 96%;
+  
+  color: #fff;
+  left: 0px;
+ background-color: #0072BC;
+        padding-left: 98px;
+        background: #f01111;
+        
+
+        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.72);
+}
+/*
+.warning{
+    
+    
+    border-left: 5px solid #de5517;
+}
+*/
+
+
+.notice-after,.warning-after{
+  background-color: #03CC85;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  padding: 8px;
+  width: 80px;
+  background: #0072BC;
+    background: #f01111;
+}
+/*
+
+.warning-after{
+     background-color: #de5517;
+}*/
+
+ 
+
+
+  
+    
+    .cd-accordion-menu ul label::after, label::after {
+    left: 59px;
+    content: "\f067";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #0da21a;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 28px;
+    left: 60px;
+}
+
+.cd-accordion-menu input[type=checkbox]:checked + label::after {
+    /* background-position: -32px 0; */
+    content: "\f068";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #32e91e;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 28px;
+    left: 49px;
+}
+
+
+.ribbon {
+ font-size: 16px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 500px;
+    
+ position: absolute;
+    top: -50px;
+    left: 32px;
+    height: 10px;
+    background: #0da21a;
+    transform-origin: left;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+transform: rotate(90deg);
+    margin-right: 10px;
+   cursor: pointer;
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #0c8116 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+
+.close-ribbon{
+  position: absolute;
+  top: 2.4em;
+  left: -5px;
+  z-index: 1;
+  color: #eee;
+  font-size: 2em;
+  cursor: pointer;
+  width: 1.5em;
+  line-height: 0.5em;
+  -webkit-transition: line-height 0.5s;
+  transition: line-height 0.5s;
+}
+.close-ribbon:after {
+  content: "";
+  font-size: 0.5em;
+  position: absolute;
+  height: 6.2em;
+    width: 20px;
+  border: 1.0em solid #0da21a;
+ 
+
+  z-index: -1;
+  top: -1em;
+  border-top-width: 1.0em;
+  border-bottom-color: transparent;
+  right: 0;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.close-ribbon:before {
+  content: "";
+  font-size: 0.5em;
+  position: absolute;
+  border-style: solid;
+  border-color: transparent transparent #0da21a transparent;
+  top: -1em;
+  right: 2em;
+  border-width: 0 0 1em 0.7em;
+  z-index: -1;
+  transition: line-height 0.5s;
+}
+
+.ribbon2{
+    top: 0;
+    left: -5px;
+}
+.ribbon2:after{
+    height: 26em;
+    
+}
+
+.ribbon2:before{
+    left: 8px;
+}
+    
+    
+
+
+.wrap{
+    width: 88px !important;
+    top: 25px;
+    cursor: pointer;
+}
+
+body{
+    height: 100%;
+    
+    overflow: hidden;
+}
+
+@media (min-width: 1200px){
+.container {
+    width: 1256px;
+}
+}
+
+.detail-section{
+     {
+    position: relative;
+    top: -38px;
+    z-index: 2;
+}
+}
+
+.menu-wrap-click.menu-wrap {
+    transform: translate3d(0%,0,0) !important;
+    padding: 0 !important;
+    top: 77px;
+}
